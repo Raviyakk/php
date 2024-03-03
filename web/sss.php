@@ -46,7 +46,7 @@ if(isset($_GET['dw'])){
                array(
                    'chat_id' => $_GET['chat_id'],
                    'parse_mode' => 'html',
-                   'video' => 'https://rvxphp-rvsss.koyeb.app/'.$n,
+                   'video' => 'https://rvxphp-rvsss.koyeb.app/'.$name,
                    'caption' => $cap
                    ));
     echo $ret;
