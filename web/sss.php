@@ -38,11 +38,15 @@ if(isset($_GET['dw'])){
   $name=$_GET['n'];
   file_put_contents($name,$n);
   sleep(5000);
+    $cap="";
+    if(isset($_GET['cap'])){
+        $cap=$_GET['cap'];
+    }
   $ret=postr('https://api.telegram.org/bot'.$_GET['token'].'/sendVideo',
                array(
                    'chat_id' => $_GET['chat_id'],
                    'parse_mode' => 'html',
-                   'video' => 'https://phpttesrr.onrender.com/'.$n,
+                   'video' => 'https://rvxphp-rvsss.koyeb.app/'.$n,
                    'caption' => $cap
                    ));
     echo $ret;
